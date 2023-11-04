@@ -6,3 +6,4 @@ d = 'bannu';    // to declear a variable (not prefered)
 /*
 Prefer not to use 'var' bacause of issue in block scope and fuctiona scope.
 */
+
