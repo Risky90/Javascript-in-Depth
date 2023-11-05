@@ -31,6 +31,6 @@ Exapmle:
     console.log(typeof BigInt) // function(when value is not assigned)
     BigInt = 1;
     console.log(typeof BigInt)// number (when vlaue is assigned)
-      
+    console.log(typeof NaN)   // number
    
     
