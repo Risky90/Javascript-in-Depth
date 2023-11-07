@@ -16,7 +16,7 @@ let myDate =  new Date();
 // let specifiedDate = new Date(2023, 0, 23); // format 1
 // console.log(specifiedDate.toLocaleString())
 
-// let specifiedDate = new Date('2023-04-11'); // format 1
+// let specifiedDate = new Date('2023-04-11'); // format 2
 // console.log(specifiedDate.toDateString())
 
 ///////////////// Time Stamp ////////////////
