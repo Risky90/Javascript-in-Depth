@@ -38,5 +38,5 @@ const myname = new String('Ashan');
 // console.log(str3.trimEnd()); // remove the white spaces form end only
 
 // let url = 'https://github.com/Risky90'
-// console.log(url.replace('Risky90', 'Risky90/Javascript-in-Depth'))// to replace come characters in string 
+// console.log(url.replace('Risky90', 'Risky90/Javascript-in-Depth'))// to replace some characters in string 
 // console.log(url.includes('Risky90'))// return boolean vlaue true or false

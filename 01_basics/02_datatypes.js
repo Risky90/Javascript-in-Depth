@@ -13,13 +13,13 @@ let isLogedIn= true;// boolean
 // null   => standalone value (it is the representation of empty value)
 /*
 Exapmle:
-    You and a request to server to show temprature, if server have some issue to send you temprature and send you 0 then 0 is also a temprature, so in such a case the 'null'(means empty) is used, and it will be prefered for the server to send empty.
+    You and a request to server to show temprature, if server have some issue to send you temprature and send you 0, then 0 is also a temprature, so in such a case the 'null'(means empty) is used, and it will be prefered for the server to send empty(null).
 */
 // undefined => (the value is not defined yet
 // symbol    uese for uniqueness (mostly used is react like libraries)
 // object 
 
-// tyoeof operator
+// tyoeof operator(show the datatype of variable)
     console.log(typeof 'ashan') // string 
     console.log(typeof age)     // number
     console.log(typeof isLogedIn)//boolean

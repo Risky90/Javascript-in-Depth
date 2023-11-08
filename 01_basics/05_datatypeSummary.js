@@ -1,4 +1,4 @@
-// Primitive Datatypes(call my value)
+// Primitive Datatypes(call by value)
 // 7 types:
 // String
 // Number
@@ -10,7 +10,7 @@
 
 
 
-// Non Primitive Datatype or Referance type
+// Non Primitive Datatype or Referance type(call by referance)
 // Types: 
 // Arrays
 // Objects
