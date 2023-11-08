@@ -61,11 +61,26 @@ let obj2 ={
 // console.log(users[1].id)  // access id(key) of the object at index 1 
 
 // To access the keys of the object 
-console.log(discordUser)
-console.log(Object.keys(discordUser)) // will return the arrays of keys of the object
-// To access the values of the object 
-console.log(Object.values(discordUser)) // will return the arrays of values of the object
+// console.log(discordUser)
+// console.log(Object.keys(discordUser)) // will return the arrays of keys of the object
+// // To access the values of the object 
+// console.log(Object.values(discordUser)) // will return the arrays of values of the object
 
-console.log(Object.entries(discordUser))// Returns an array of key/values of the enumerable properties of an objec
+// console.log(Object.entries(discordUser))// Returns an array of key/values of the enumerable properties of an objec
 
-console.log(discordUser.hasOwnProperty('name'))// is exist the name property in the object
+// console.log(discordUser.hasOwnProperty('name'))// is exist the name property in the object
+
+
+// Desturcturing in objects
+
+const course = {
+    courseName :'Js in depth',
+    coursePrice: '999',
+    cosrseTeacher : 'Ashan'
+}
+// console.log(course.cosrseTeacher)
+// or 
+// const {cosrseTeacher} = course // extract the vlaue from course(this destructuring )
+// console.log(cosrseTeacher)
+const {cosrseTeacher : CT} = course // you can change its name 
+console.log(CT)
