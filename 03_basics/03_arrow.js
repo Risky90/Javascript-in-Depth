@@ -57,4 +57,4 @@
 
 //// if you have to return object
 let addTwo = (num1, num2)=> ({username: 'Ashan'}) // must be wraped in () if you want to return objcet
-console.log(addTwo(3,6))
+console.log(addTwo(3,6))  
