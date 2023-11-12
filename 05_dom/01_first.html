@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom bacics</title>
+</head>
+<body style="background-color :#212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wensday</div>
+        <div class="day">Thoursday</div>
+    </div>
+</body>
+    <script>
+        let parent = document.querySelector('.parent')
+        //  console.log(parent) // will show the parent and its inside elements
+        // //  console.log(parent.children) // return html-collection of all its child nodes
+        //  // htmlColleciton is not array it is little bit same with array
+        //  console.log(parent.children[1]) // will return the first element in parent element 
+        //  console.log(parent.children[1].innerHTML) 
+        // // to convert html colleciton into array 
+        // let htmlColl = parent.children;
+        // let myArr=  [...htmlColl]
+        // console.log(myArr)
+      
+
+
+        // we can apply for loop on html collecion
+        // for(let i = 0 ; i<parent.children.length; i++){
+        //     console.log(parent.children[i])
+        // }
+        parent.children[1].style.color = 'orange';
+        // console.log(parent.firstElementChild) // return the first children
+        // console.log(parent.lastElementChild) 
+        const dayOne = document.querySelector('.day')// return the first element with class (day)
+        // console.log(dayOne)
+        // // going form child to parent
+        // console.log(dayOne.parentElement) // return the parent element
+        // console.log(dayOne.nextElementSibling) // return the sibling element of the element
+ 
+            console.log("Nodes : ", parent.childNodes)
+            console.log("Nodes : ", parent.childNodes[1])
+
+    </script>
+</html>

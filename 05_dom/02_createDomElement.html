@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    
+    let div = document.createElement('div')
+    div.className = 'main';
+    div.id = Math.random() * 10
+    div.style.backgroundColor = "#234534";
+    div.style.padding = '10px'
+    // div.innerText = "Ashan Khan";
+    // insted of innerText the bleow is prefered
+    let mytext =  document.createTextNode("Ashan Khan")
+    div.appendChild(mytext)
+    document.body.appendChild(div)
+    console.log(div);
+    
+</script>
+</html>
