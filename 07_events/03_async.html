@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Ashan Khan</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>    
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    // start.addEventListener('click', ()=>{
+    //   console.log('Interval is Start')  
+    //  startInterval  =  setInterval(function(str){
+    // let date = new Date();
+    // console.log('Ashan Khan ' , date.getSeconds(), )
+    // }, 1300,)
+    // })
+    // stop.addEventListener('click', ()=>{
+    //     clearInterval(startInterval)
+    // console.log('Interval is Stoped')})
+    //     console.log(typeof startInterval)
+    let rndColor = Math.floor(Math.random()* 1000000);
+    console.log(rndColor)    
+    let startInterval;
+    start.addEventListener('click', ()=>{
+            if(!startInterval){
+           startInterval = setInterval(()=>{
+        
+            document.body.style.backgroundColor = `#${Math.floor(Math.random()* 1000000)}`;
+            console.log(`#${Math.floor(Math.random()* 1000000)}`)
+        }, 1000)
+    }
+        });
+        stop.addEventListener('click', ()=>{
+            document.body.style.backgroundColor = 'white'
+            clearInterval(startInterval)
+            startInterval = null;
+        })
+</script>
+</html>

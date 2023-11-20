@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Ashan Khan</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const greet = function(){
+        console.log('WelCome')
+    }
+
+    // setTimeout(()=>{
+    //     console.log("Ashan Khan")
+    // }, 1400)
+    // setTimeout(greet, 1400)
+
+    const changeText = function(){ 
+             document.querySelector('h1')
+             .innerHTML = 'WelCome Back'
+    }
+    // setTimeout(changeText, 2000)// you have to send the refrenece because it is handler not this (changeText())
+    
+    const changeMe = setTimeout(changeText, 2000)// taking the refrence of this specific setTimeout
+    // to clear the setTimeout
+    let btn = document.querySelector('#stop');
+    btn.addEventListener('click', ()=> (clearTimeout(changeMe),console.log('Change Stoped')))// this will stop the time out
+
+    // setInterval(()=>{
+    //     console.log("Ashan")
+    // }, 1000)
+
+
+
+</script>
+</html>
